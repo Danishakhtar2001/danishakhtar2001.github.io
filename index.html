@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Danish Akhtar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-GSJTZV5QUt/hJe8m8J0e4d1tk2zhH3cqi2+q1p77wYLcq7fWFdw4rP+MSa0S/IBYw4hv8f7rS7ZYwqzwuCMlA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body style="background-color:#000080;",="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Danish Akhtar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#Certifications-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg3333.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Danish Akhtar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Data Analyst        ',
+						'Business Analyst   ',
+						'SQL Developer   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+						<p style="line-height: 1;">
+							<a href="https://www.linkedin.com/in/danish-akhtar-542764222/" target="_blank" class="btn btn-primary py-3 px-4" style="display: inline-block;">
+								<span style="vertical-align: middle;">LinkedIn</span>
+								<span class="icon-linkedin" style="font-size: 24px; margin-left: 5px; vertical-align: middle;"></span>
+							</a>
+							<a href="https://github.com/Danishakhtar2001" target="_blank" class="btn btn-white btn-outline-white py-3 px-4" style="display: inline-block;">
+								<span style="vertical-align: middle;">My Works</span>
+								<span class="icon-github" style="font-size: 24px; margin-left: 5px; vertical-align: middle;"></span>
+							</a>
+							<a href="https://leetcode.com/Danish_2001/" target="_blank" class="btn btn-white btn-outline-white py-3 px-4" style="display: inline-block;">
+								<span style="vertical-align: middle;">Leetcode</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+									<path fill="currentColor" d="M13.483 0a1.37 1.37 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.3 5.3 0 0 0-1.209 2.104a5 5 0 0 0-.125.513a5.5 5.5 0 0 0 .062 2.362a6 6 0 0 0 .349 1.017a5.9 5.9 0 0 0 1.271 1.818l4.277 4.193l.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.38 1.38 0 0 0-1.951-.003l-2.396 2.392a3.02 3.02 0 0 1-4.205.038l-.02-.019l-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.7 2.7 0 0 1 .066-.523a2.55 2.55 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0m-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382a1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382a1.38 1.38 0 0 0-1.38-1.382z"/>
+								</svg>
+							</a>
+							
+							
+							
+						</p>
+						
+						
+						
+						
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/img.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Danish Akhtar</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>6 Months</span></p>
+										<p><span class="title-s">Address: </span> <span>Delhi, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Python</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>A BCA graduate proficient in Python, SQL, advanced Excel, and Power BI. Skilled in data analysis, visualization, and database management. Seeking to apply academic knowledge and analytical skills as a Data Analyst. Quick learner with a passion for problem-solving and continuous growth. Excited to contribute to collaborative and innovative teams.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+						
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Computer Application (BCA)</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> Excel, No SQL, GitHub, Google Analytics </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Writing, Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number">10</span><span>+</span>
+
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/danish-akhtar-542764222/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>BCA graduate skilled in Python, SQL, Excel, and Power BI. Proficient in data analysis and visualization. Seeking Data Analyst role. Passionate problem-solver eager to join innovative teams.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		<div class="container text-center">
+			<div class="row justify-content-center">
+				<div class="col-md-10"> <!-- Adjusted column size to col-md-9 for a slightly wider box -->
+					<div class="resume-wrap ftco-animate text-left"> <!-- Changed text alignment to left -->
+						<span class="date">Jan 2022- Jun 2022</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">CUPSHUP | Gurugram, Haryana</span>
+						<p class="mt-4">Cupshup, a data-driven leading Advertising and media company with over 250+ professionals. 
+							<ul>
+								<li>As a data analyst, I analyzed key factors and collated data from the MIS team. I constructed custom dashboards for over 10 brands using Microsoft Power BI for clients, ensuring continuous data accuracy, integrity, and security.</li>
+								<li>Worked closely with the business development team, effectively translating data findings into actionable insights. This process enhanced overall client satisfaction, engagement, and retention.</li>
+								<li>Presented data analysis reports to senior managers, guiding strategic decision-making and enhancing business performance.</li>
+							</ul>
+							
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>BCA</h2>
+    					<span class="position">Guru Gobind Singh Indraprastha University</span>
+    					<p class="mt-4">CGPA: 8.6/10 </p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2019</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Notre Dame School</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1BxCyNFAMRK9ai9hf4HRKi0H0x39ezkve/view?usp=sharing" class="btn btn-primary py-4 px-5" target="_blank">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			
+
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://github.com/Danishakhtar2001/Lok-sabha-Election-2019-Analysis?tab=readme-ov-file" class="block-20 zoom-effect" style="background-image: url('images/proj33.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://github.com/Danishakhtar2001/Lok-sabha-Election-2019-Analysis?tab=readme-ov-file" target="_blank">Lok Sabha Elections 2019 - Data Analysis using Python, SQL</a></h3>
+				  <p>Leveraged Pandas, Numpy, Matplotlib, Seaborn, and sqlite3 for comprehensive 2019 elections analysis, incorporating ETL, data collection, preprocessing, and exploratory data analysis. Applied advanced techniques including joins and window functions. Evaluated state-wise political party performance and election factors, while assessing opposition performance per state to identify areas for future electoral improvement.</p>
+				</div>
+			  </div>
+			</div>
+
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				  <a href="https://github.com/Danishakhtar2001/SQL-Case-Study-Danny-s-Dinner" class="block-20 zoom-effect" style="background-image: url('images/prog_1.png');" target="_blank">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+					<h3 class="heading"><a href="https://github.com/Danishakhtar2001/SQL-Case-Study-Danny-s-Dinner" target="_blank">Danny's Dinner Restaurant - Data Analysis using SQL</a></h3>
+					<p>The SQL project analyzes customer transactions at Danny's Diner. Concepts like joins, aggregations, window functions, and conditional logic are employed. It calculates total spending, visit frequency, popular items, and member benefits. Techniques include point system calculations, membership status determination, and ordering analysis. The project provides insights into customer behavior and loyalty program effectiveness.</p>
+				  </div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://project.novypro.com/YoHib4" class="block-20 zoom-effect" style="background-image: url('images/project_3.jpeg');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://project.novypro.com/YoHib4" target="_blank">Sachin Tendulkar Power BI Dashboard</a></h3>
+				  <p>Developed a lively Power BI dashboard employing Power Query for ETL Operations. Explored Sachin's performance against various opponents with yearly breakdowns displayed in charts. Enhanced user experience with customized tooltips, field parameters, and slicers for smoother interaction. Additionally, utilized Data Analysis Expressions (DAX) for advanced calculations and data modeling, incorporating functions like COALESCE, BLANK(), ALL EXCEPT, and IFS for refined data processing.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://project.novypro.com/M1aB1u" class="block-20 zoom-effect" style="background-image: url('images/amazon2.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://project.novypro.com/M1aB1u" target="_blank">Amazon Sales Power BI Dashboard</a></h3>
+				  <p>The Advanced Amazon Sales Dashboard in Power BI provides comprehensive visualizations of revenue, product sales, and customer behavior, leveraging advanced analytics and DAX functions. Customizable filters and real-time data integration enhance exploration. Sophisticated data modeling is pivotal in organizing insights, optimizing Amazon sales strategy and revenue, offering e-commerce professionals a powerful tool for informed decision-making and strategic growth.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://www.novypro.com/project/spotify-music-analysis-dashboard-" class="block-20 zoom-effect" style="background-image: url('images/proj_5.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.novypro.com/project/spotify-music-analysis-dashboard-" target="_blank">Spotify Music Power BI Dashboard</a></h3>
+				  <p>The Spotify Music Analysis Dashboard leverages DAX (Data Analysis Expressions) functions within Power BI, enabling dynamic calculations and aggregations of crucial metrics like track popularity and artist trends. This integration empowers the dashboard to offer in-depth insights into music trends and user preferences through a user-friendly interface and diverse visualizations. Creating this dashboard not only provided hands-on experience but also honed proficiency in implementing new features within Power BI.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://www.novypro.com/project/electoral-bonds---data-analysis-dashboard" class="block-20 zoom-effect" style="background-image: url('images/proj_6.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.novypro.com/project/electoral-bonds---data-analysis-dashboard" target="_blank">Electoral Bonds Power BI Dashboard</a></h3>
+				  <p>
+					Data extraction from the Election Commission of India's (ECI) PDFs is facilitated by Python libraries like pandas and tabula-py. Extracted data undergoes cleaning in PowerBI using Power Query. The merge function is then employed to combine tables, enhancing data analysis. Key features include identifying top recipients, donor origins, and tracking donation trends over time, fostering transparency and informed decision-making.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+	  
+
+	  <section class="ftco-section" id="Certifications-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Certifications</h1>
+			  <h2 class="mb-4">Certifications</h2>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://www.coursera.org/account/accomplishments/specialization/HPR2PHPJSYTN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" class="block-20 zoom-effect" style="background-image: url('images/c1.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.coursera.org/account/accomplishments/specialization/HPR2PHPJSYTN?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof" target="_blank">IBM Data Analyst Specialization</a></h3>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry justify-content-end">
+				<a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_JuKKoduLX67ejTAC5_1709546317980_completion_certificate.pdf" class="block-20 zoom-effect" style="background-image: url('images/cert2.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/PwC%20Switzerland/a87GpgE6tiku7q3gu_PwC%20Switzerland_JuKKoduLX67ejTAC5_1709546317980_completion_certificate.pdf" target="_blank">PwC Switzerland - Power BI Job Simulation</a></h3>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+			  <div class="blog-entry">
+				<a href="https://www.hackerrank.com/certificates/452255209a51" class="block-20 zoom-effect" style="background-image: url('images/crt3.png');" target="_blank">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading"><a href="https://www.hackerrank.com/certificates/452255209a51" target="_blank">HackerRank Intermediate SQL Certificate</a></h3>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <br>
+		</div>
+	  </section>
+	  ```
+	  
+  
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number">15+</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number">300+</strong>
+                <span>SQL Questions Solved</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number">10+</strong>
+                <span>Dashboards</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+		<!-- <div class="container"> -->
+		<div class="row justify-content-center">
+			<div class="col-md-7 ftco-animate text-center">
+				<h2>More projects on<span> Github </span></h2>
+				<div class="heading">
+					<h4>I love to solve business problems &amp; uncover hidden data stories</h4>
+					<br>
+					<p>
+						<a href="https://github.com/Danishakhtar2001" class="btn btn-primary py-3 px-5" target="_blank">
+							<span style="font-size: 18px; vertical-align: middle;">GitHub</span>
+							<span class="icon-github" style="font-size: 18px; vertical-align: middle;"></span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
+	</div>
+	
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+	
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>New Delhi, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel://+918920600189" target="_blank">+91-8920600189</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email</h3>
+						<p><a href="mailto:danish.mdakhtar2001@gmail.com" target="_blank">danish.mdakhtar2001@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-linkedin"></span>
+						</div>
+						<h3 class="mb-4">LinkedIn</h3>
+						<p><a href="https://www.linkedin.com/in/danish-akhtar-542764222/" target="_blank">LinkedIn</a></p>
+					</div>
+				</div>
+			</div>
+	
+			<div class="container">
+				<br>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>let's <span>Collaborate! </span><a href="https://forms.gle/P9MB8iCDGbgPugGS9" class="btn btn-primary py-3 px-5" target="_blank">Click Here</a> </h2>
+					</div>
+				</div>
+				<br>
+				<br>
+			</div>
+		</div>
+	</section>
+	
+ 
+	
+	<footer class="ftco-footer ftco-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>
+						Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
